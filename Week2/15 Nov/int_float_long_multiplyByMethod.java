@@ -3,21 +3,28 @@ import java.util.Scanner;
 
 public class int_float_long_multiplyByMethod {
 	
+	// Here we take in method two variables as a integer : 
 	public static int multiply(int a,int b) {
 		int result;
 		result = a*b;
 		return result;
 	}
+	
+	// Here we take in method two variables as a float :
 	public static float multiply(float a,float b) {
 		float result;
 		result = a*b;
 		return result;
 	}
+	
+	// Here we take in method two variables as a long :
 	public static long multiply(long a,long b) {
 		long result;
 		result = a*b;
 		return result;
 	}
+	
+	// Here we take in method three variables as a integer,float and long :
 	public static double multiply(int a,float b,long c) {
 		double result;
 		result = (a*c)*b;
@@ -29,6 +36,8 @@ public class int_float_long_multiplyByMethod {
 		char ch;
 		
 		do {
+			
+		// Here we ask to user which multiplication they can do : 	
 		System.out.print("what method you can choose for multiply the value (1=>integer/2=>float/3=>long/4=>integer,float,long) : ");
 		int i = userinput.nextInt();
 		
