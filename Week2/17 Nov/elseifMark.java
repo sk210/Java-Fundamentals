@@ -32,11 +32,20 @@ public class elseifMark {
 	public static void main(String[] args) {
 		
 		Scanner userinput = new Scanner(System.in);
+		char ch;
+		do {
 		
 		System.out.print("Enter your marks : ");
 		int mark = userinput.nextInt();
-		userinput.close();
 		System.out.print("your grade is : " + Grade(mark));
+		
+		System.out.println();
+		System.out.println();
+		
+		System.out.print("Do you want to enter another marks(y/n) : ");
+		ch = userinput.next().charAt(0);
+		
+		}while(ch == 'y' || ch == 'Y');
 
 	}
 
