@@ -1,0 +1,44 @@
+ 
+class A
+{
+    public A()
+    {
+        //public constructor
+    }
+}
+ 
+package pack2;
+ 
+import pack1.*;
+ 
+class B
+{
+    A a = new A();   	//Compile Time Error Because We Not Add public static void main(String[] args) 
+}
+
+
+
+
+// Modify Program 
+ 
+public class A
+{
+    public A()
+    {
+        System.out.println("Class A and B");
+    }
+}
+ 
+public package pack2;
+ 
+import pack1.*;
+ 
+class B
+{
+    	
+   public static void main(String[] args) {
+
+         A a = new A();
+
+    }   	
+}
